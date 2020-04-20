@@ -3,14 +3,14 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 # On crée une instance du web-driver Firefox et on va sur la page de eBay.fr pour tester
-# fp = webdriver.FirefoxProfile
-# driver = webdriver.Firefox(fp)
-# driver.get("http://www.ebay.fr")
+fp = webdriver.FirefoxProfile
+driver = webdriver.Firefox(fp)
+driver.get("http://www.ebay.fr")
 
 # On crée une instance du web-driver Chromium Browser et on va sur la page de eBay.fr pour tester
 # Commande pour installer chromium-driver: sudo apt-get install chromium-chromedriver
-driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver")
-driver.get("http://www.ebay.fr")
+# driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver")
+# driver.get("http://www.ebay.fr")
 
 # En fonction de notre connection et des performance de notre machine il faudra attendre
 # que la page charge avant de passer à la suite
